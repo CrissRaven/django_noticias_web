@@ -1,0 +1,186 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    background-image: url(https://www.tvn.cl/tvn/site/artic/20230531/imag/foto_0000000520230531191855/foto_0000001820230531185603.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.registro{
+ position: absolute;
+ top: 50%;
+ left: 35%;
+ transform: translate(-50%, -50%);
+ width: 400px;
+ background: rgb(255, 255, 255);
+ border-radius: 10px;
+}
+
+.login{
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+   }
+.registro h1{
+ text-align: center;
+padding: 0 0 20px 0;
+border-bottom: 1 px solid silver;
+}
+.registro form{
+padding: 0 40px;
+box-sizing: border-box;
+}
+
+.login h1{
+    text-align: center;
+   padding: 0 0 20px 0;
+   border-bottom: 1 px solid silver;
+   }
+.login form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+   }
+.center h1{
+    text-align: center;
+   padding: 0 0 20px 0;
+   border-bottom: 1 px solid silver;
+   }
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.txt_field label{
+ position: absolute;
+ top: 50%;
+ left: 5px;
+ color: #adadad;
+ transform: translateY(-50%);
+ font-size: 16px;
+ pointer-events: none;
+ transition: .5s;
+
+}
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #05dcf8;
+    transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top: -5px;
+    color: #000000;
+
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+    width: 100%;
+}
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #f0e005;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #272727;
+    font-weight: 700;
+    cursor:pointer;
+    outline: none;
+}
+input[type="submit"]:hover{
+    color: #f50f0f;
+    transition: .5s;
+}
+.registro_link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+
+}
+.registro_link a{
+    color: #000000;
+    text-decoration: none;
+}
+.registro_link a:hover{
+    text-decoration: underline;
+}
+.volver_link{
+    margin: 20px 0;
+    text-align: right;
+    font-size: 16px;
+    color: #000000;
+    margin-left: 40px;
+
+}
+.volver_link a{
+    color: #939393;
+    text-decoration: none;
+}
+.volver_link a:hover{
+    color: #000000;
+    transition: .5s;
+}
+.recuperar{
+    margin: 23px 0;
+    text-align: left;
+    font-size: 18px;
+    color: #000000;
+
+}
+.recuperar a{
+    color: #939393;
+    text-decoration: none;
+}
+.recuperar a:hover{
+    color: #000000;
+    text-decoration: underline;
+}
+.login_link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+
+}
+.login_link a{
+    color: #000000;
+    text-decoration: none;
+}
+.login_link a:hover{
+    text-decoration: underline;
+}

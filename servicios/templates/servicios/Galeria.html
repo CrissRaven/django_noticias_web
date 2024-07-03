@@ -1,0 +1,33 @@
+{% extends 'servicios/base.html' %}
+{% block contenidos %}
+{% load static %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TVN Noticias</title>
+  <link rel="stylesheet" href="{% static 'servicios/estilogaleria.css' % }">
+  <link rel="stylesheet" href="navbar.css">
+</head>
+
+  <h1 class="titulon1">[Galeria de Noticias]</h1>
+  <span class="linea"></span>
+    <div class="Nombre">
+    {% for g in galerias %} 
+      <section class="galeria">
+        {% if g.galeria %}
+        <a href="#image1">
+          <img src="{{g.galeria.url}}" alt="">
+          <h3>{{g.nombre.url}}</h3>
+        </a>
+        {% endif %}
+      </section>
+    </div>
+    <div class="Info">
+      <article class="light-box" id="image1">
+        <a href="#image3" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="{}" alt="">
+        <h3> {{g.nombre.url}}</h3>
+        <p> 
+        </p>
+    {% endfor %}
+{% endblock %}  

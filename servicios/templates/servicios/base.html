@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TNV Noticias</title>
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="carousel.css">
+  <link rel="stylesheet" href="{% static 'servicios/style.css'%}" />
+</head>
+
+<body class="bg-dark">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-custom" aria-label="Eighth navbar">
+    <div class="container">
+      <a class="navbar-brand" href="noticiasBootstrap.html">
+        <img src="{% static 'servicios/imagenes/tvnlogo.png' %}" alt="TVN Noticias" height="32" width="32">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="noticiasBootstrap.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Noticiarios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Galeria.html">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="registro.html">Registrate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="carrito.html">Servicios</a>
+          </li>
+        </ul>
+        <form role="search">
+          <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+        </form>
+      </div>
+    </div>
+  </nav>
+  <br />
+
+  <!--bloque-->
+  {% block contenidos %}
+  {% endblock %}
+
+  <footer class="bg-secondary">
+    <center>
+      BELLAVISTA #0990, PROVIDENCIA | SANTIAGO, CHILE | F: (+56-2)2707 7777
+      <img src="{% static 'servicios/imagenes/tvnfooter2.png' %}" alt="" height="55" width="55" /><img src="{% static 'servicios/imagenes/tvnfooter1.png' %}" alt=""
+        height="90" width="90" />©2022 TELEVISIÓN NACIONAL DE CHILE. TODOS LOS DERECHOS RESERVADOS
+    </center>
+  </footer>
+</body>
+
+</html>
